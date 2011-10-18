@@ -1,0 +1,54 @@
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('#updown').click(function() {
+  $('#absFooter').slideToggle();
+});
+});
+
+</script>
+<style>
+
+#absWrap{
+	position:fixed;
+	bottom:0px; 
+	width: 100%;
+}
+
+#absFooter{
+	height:85px;
+	background: url(footer.jpg) top repeat-x #CCC;
+	text-align: center;
+}
+
+
+#footerWrap{
+	margin: 0 auto;
+	padding-top: 35px;
+	width: 950px;
+	text-align: center;
+}
+
+#updown{
+	position: absolute;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+}
+</style>
+</head>
+<body>
+
+<div id="absWrap">
+<img src="UPDOWN.png" id="updown" />
+<div id="absFooter">
+<div id="footerWrap">
+Footer Contents Go Here</div>
+</div>
+</div>
+
+
+</body>
+</html>
