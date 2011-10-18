@@ -1,0 +1,44 @@
+/* CSS Document */
+
+table{
+}
+
+tbody tr:nth-child(even){
+    background: #ebebeb;
+}
+
+tr td, th{
+    border: 1px solid #764703;
+    padding: 4px;
+    margin: 10px;
+}
+
+em{
+     font-style: italic;  
+     text-align: center;
+}
+
+thead th{
+    font-weight: bold;
+}
+
+th[colspan="3"]{
+    text-align: center;
+    font-size: 2em;
+    line-height: 125%;
+    padding: 5px;
+}
+
+th{
+    background: #F89D1B;
+    color: #FFF;
+}
+
+tbody td{
+    font-weight: bold;
+}
+
+tfoot{
+     color: #333;
+     font-size: small; 
+}
