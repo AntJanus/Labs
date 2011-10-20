@@ -1,6 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head profile="http://gmpg.org/xfn/11" lang="<?php bloginfo('language');?>">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<?php bloginfo('language');?>">
+<head profile="http://gmpg.org/xfn/11">
 
 	<title><?php wp_title(); ?></title>
 		<!-- FAVICON -->
@@ -25,6 +25,6 @@
 	<?php $templateUri = get_template_directory_uri(); ?>
      
      
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 </head>
