@@ -7,5 +7,9 @@ a plugin that uses "display: none" on a parent element or sibling elements. This
 
 
 .unseen{
-		
+	position: absolute;
+	left: -9999px;
+	width: 100px;
+	height: 100px;
+	overflow: scroll;
 }
