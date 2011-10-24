@@ -6,8 +6,8 @@
 $postDate = get_the_date('c');
 $postDate2 = get_the_date('d.m.Y');
 echo $postDate ?>" pubdate>
-<?php echo $postDate2; ?></time> | <span class="byline vcard"><span class="fn author"><?php the_author();?></span> | <?php the_category(''); ?></span> | <span class"org"><?php bloginfo('name'); ?></span> 
-        <div class="postContent entry-content">
+<?php echo $postDate2; ?></time> | <span class="byline vcard"><span class="fn author"><?php the_author();?></span> | <?php the_category(''); ?></span> | <span class="org"><?php bloginfo('name'); ?></span></span> 
+   <div class="postContent entry-content">
      <?php the_content(); ?>
      
      

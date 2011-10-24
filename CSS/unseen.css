@@ -1,0 +1,11 @@
+/* CSS Document */
+
+/* The purpose of this class/these classes is to hide an element without using "display: none". It will enable preloading of the element (I think). And in case you're using 
+a plugin that uses "display: none" on a parent element or sibling elements. This will keep the element out of view even if the display style is changed */
+
+/* USES: hide elements you're still working on while keeping a website live */
+
+
+.unseen{
+		
+}
