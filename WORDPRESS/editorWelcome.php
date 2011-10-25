@@ -1,5 +1,13 @@
 <?php
-// add this to your functions.php file for your wordpress them. Strip the php tags if needed or you get errors 
+/*
+AUTHOR: Antonin Januska
+DESCRIPTION: These two filters will create a "welcome" placeholder text for a new post. The first function will add random body text form the array.
+The second function will do the same except for a title instead of body.
+Enjoy!
+
+
+
+*/
 add_filter( 'default_content', 'writingEncouragement' );
 function writingEncouragement( $content ) {
 			global $post_type;
