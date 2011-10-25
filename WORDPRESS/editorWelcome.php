@@ -21,4 +21,19 @@ function writingEncouragement( $content ) {
 			}
 }
 
+
+function title_text_input( $title ){
+    	$title = array( "Enter a GOOD, CREATIVE Title!",
+									"404 Post Not Found, I guess you can just rewrite it",
+									"Title rich in KEYWORDS goes here",
+									"Enter Title",
+									"Enter Writing Mode",
+									"How To: Write a GOOD post",
+									"Top 10 whatever"
+									);
+			$title = $encArray[array_rand($encArray)];
+	return $title;
+}
+add_filter( 'enter_title_here', 'title_text_input' );
+
 ?>
