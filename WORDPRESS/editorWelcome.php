@@ -39,7 +39,7 @@ function title_text_input( $title ){
 									"How To: Write a GOOD post",
 									"Top 10 whatever"
 									);
-			$title = $encArray[array_rand($encArray)];
+			$title = $title[array_rand($title)];
 	return $title;
 }
 add_filter( 'enter_title_here', 'title_text_input' );
