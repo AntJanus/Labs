@@ -24,8 +24,7 @@ function writingEncouragement( $content ) {
 									"You are now participating on what is called \"on-site SEO \" where you create useful content, put keywords into the URL and optimize your meta information",
 									"This little piece of code can be used to create a wordpress signature or to automatically populate advertisement code"
 									);
-			$content = $encArray[array_rand($encArray)];
-	return $content;
+			return $encArray[array_rand($encArray)];
 			}
 }
 
@@ -39,8 +38,7 @@ function title_text_input( $title ){
 									"How To: Write a GOOD post",
 									"Top 10 whatever"
 									);
-			$title = $title[array_rand($title)];
-	return $title;
+			return $title[array_rand($title)];
 }
 add_filter( 'enter_title_here', 'title_text_input' );
 
