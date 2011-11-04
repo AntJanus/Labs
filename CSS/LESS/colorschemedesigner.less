@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* This little snippet is meant to setup basics of LESS CSS in conjunction with Color Scheme Designer (http://colorschemedesigner.com). This example uses: http://colorschemedesigner.com/#0011Tw0w0w0w0 */
+
+/* COLORS */
+@base-white: #fff;
+@base-black: #000;
+
+@base: #FF0000; /* unadjusted main color */
+@base-sat-light: #FF4040; /* saturated light  */
+@base-unsat-light: #FF7373; /* less saturated */
+@base-sat-dark: #A60000; /* saturated dark */
+@base-unsat-dark: #BF3030; /* less saturated dark */
+
+
+/* CHECK COMPILATION, colors used in a similar manner as the "Light page example" in Color Scheme Designer  */
+html{
+	background: @base-white;
+	color: @base-black;
+}
+
+header{
+	background: @base-sat-light; 
+	color: @base-unsat-dark;
+}
+
+nav ul li {
+	background: @base-sat-dark;
+}
+
+nav ul li a{
+	color: @base;	
+}
+
+nav ul li.active{
+	background: @base;	
+}
+
+nav ul li.active a{
+	color: @base-sat-dark;	
+}
+
+h1, h2{
+	color: @base-unsat-light;	
+}
+
+a{
+	color: @base;	
+}
+
+footer{
+	background: @base-sat-dark;
+	color: @base;	
+}
