@@ -1,0 +1,43 @@
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+@charset "UTF-8";
+/* CSS Document */
+/* This little snippet is meant to setup basics of LESS CSS in conjunction with Color Scheme Designer (http://colorschemedesigner.com). This example uses: http://colorschemedesigner.com/#0011Tw0w0w0w0 */
+/* COLORS */
+/* unadjusted main color */
+/* saturated light  */
+/* less saturated */
+/* saturated dark */
+/* less saturated dark */
+/* CHECK COMPILATION, colors used in a similar manner as the "Light page example" in Color Scheme Designer  */
+html {
+  background: #ffffff;
+  color: #000000;
+}
+header {
+  background: #ff4040;
+  color: #bf3030;
+}
+nav ul li {
+  background: #a60000;
+}
+nav ul li a {
+  color: #ff0000;
+}
+nav ul li.active {
+  background: #ff0000;
+}
+nav ul li.active a {
+  color: #a60000;
+}
+h1, h2 {
+  color: #ff7373;
+}
+a {
+  color: #ff0000;
+}
+footer {
+  background: #a60000;
+}
+footer a {
+  color: #ff0000;
+}

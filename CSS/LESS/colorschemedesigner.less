@@ -13,7 +13,6 @@
 @base-sat-dark: #A60000; /* saturated dark */
 @base-unsat-dark: #BF3030; /* less saturated dark */
 
-
 /* CHECK COMPILATION, colors used in a similar manner as the "Light page example" in Color Scheme Designer  */
 html{
 	background: @base-white;
@@ -25,20 +24,24 @@ header{
 	color: @base-unsat-dark;
 }
 
-nav ul li {
-	background: @base-sat-dark;
-}
-
-nav ul li a{
-	color: @base;	
-}
-
-nav ul li.active{
-	background: @base;	
-}
-
-nav ul li.active a{
+nav {
+	ul li{
+		background: @base-sat-dark;
+		
+		a{
+			color: @base;
+		}
+	
+	}
+	
+	ul li.active{
+		background: @base;
+		
+		 a{
 	color: @base-sat-dark;	
+		}	
+		
+	}
 }
 
 h1, h2{
@@ -51,5 +54,8 @@ a{
 
 footer{
 	background: @base-sat-dark;
-	color: @base;	
+		
+		a {
+		color: @base;	
+		}
 }
