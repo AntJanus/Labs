@@ -4,7 +4,7 @@ Header.php - a classic copy/paste header for creating Wordpress themes. It inclu
 
 It's currently based on the XHTML 1.0 transitional. The HTML5 header is under header5.php
 
-Header5.php - same as Header.php but HTML5
+Header5.php - same as Header.php but HTML5, now includes HTML5 Shiv
 
 editorWelcome.php - A quick little content addition snippet to welcome you when writing a new blog post! :) I found it extremely encouraging when writing
 
