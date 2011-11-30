@@ -1,0 +1,41 @@
+/* CSS Document */
+
+/* create basic formatted layout within TinyMCE with this custom div editor style. It includes a sidebar, top image, main content, and clearfix. This requires a TinyMCE editor style filter as well as allowing the "div" tag */
+
+div{
+	background-color: #ddd;
+	margin: 5px;
+	padding: 10px;	
+}
+
+#topImage{
+	clear:both;
+		
+}
+
+#custContent{
+	float:left;
+	width: 70%;	
+}
+
+#customSide{
+	float:left;
+	width: 25%;	
+}
+
+.clearfix{
+	clear:both;
+	height: 1px;	
+}
+
+/* basic structure
+<div id="topImage">Top image and content goes here</div>
+
+<div class="clearfix">&nbsp;</div>
+
+<div id="custContent">Custom content goes here (the left column)</div>
+
+<div id="customSide">sidebarinfo goes here</div>
+
+<div class="clearfix">&nbsp;</div>
+*/

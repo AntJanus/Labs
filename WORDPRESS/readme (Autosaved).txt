@@ -8,7 +8,7 @@ Header5.php - same as Header.php but HTML5, now includes HTML5 Shiv
 
 editorWelcome.php - A quick little content addition snippet to welcome you when writing a new blog post! :) I found it extremely encouraging when writing
 
-Custom-Div-Editor-Style - create basically formatted layout within TinyMCE with this custom div editor style. It includes a sidebar, top image, main content, and clearfix. This requires a TinyMCE editor style filter as well as allowing the "div" tag
+Custom-Div-Editor-Style - create basic formatted layout within TinyMCE with this custom div editor style. It includes a sidebar, top image, main content, and clearfix. This requires a TinyMCE editor style filter as well as allowing the "div" tag
 
 UPDATE LOG
 editorWelcome.php:
