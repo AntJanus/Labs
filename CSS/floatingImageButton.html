@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+/*
+** Original by antjanus
+** http://jsfiddle.net/antjanus/P52Pk/
+** http://forrst.com/posts/HTML5_figure_with_a_simple_CSS3_effect-Tct#
+** Read along to understand each component of this formula
+** Image courtesy of Adhere Creative (adherecreative.com)
+*/
+
+img {
+/* declare image width, and declare any effects applied to the image will take 250ms with the ease-in-out timing */
+    width: 250px; 
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out; 
+}
+
+figure {
+/* basic image module wrapper styling such as border, padding, radius, and that nice inset shadow as well as the bottom shadow */
+     position: relative;
+     border: 1px solid #ddd;  
+     padding: 15px; 
+     border-radius: 15px;
+     width: 250px;
+	/* use the following shadow for that "floating" effect as well as the 3D button look. */
+     box-shadow: 0 25px 10px -20px #666, inset 0 0 20px 0 #ccc;
+	/* Animation timing */
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    height: 150px;
+}
+
+figcaption span {
+	/* text below the "fold" of the image wrapper. Ie. unseen figure */
+     opacity: 0;
+	/* animation timing */
+      -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;  
+}
+
+figure:hover {
+	/* let's apply hover effect. This will change the shadow to make the figure float higher and darken the inside
+	 * size also changes to accomodate the above hidden span */
+    box-shadow: 0 30px 10px -20px #666, inset 0 0 20px 0 #a2a2a2;
+    top: -5px;
+    height: 200px;
+}
+
+ figure:hover img{
+	/* hover effect on image. Image gets larger and has a solid border as well as background */
+    background: #fff;
+    border: 1px solid #999;
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    transform:scale(1.05);  
+}
+
+figure:hover figcaption span{
+	/* disappeared text gains opacity, previous timing information will make it ease-in-out */
+     opacity: 1; 
+}
+
+figure+figure {
+	/* general formatting, redo this or ignore for your own uses */
+    margin-top: 20px;   
+}
+
+figure img {
+
+    border-bottom: 1px solid #999;   
+}
+
+figcaption {
+    font: 14px/16px sans-serif;
+    text-align: center;
+    color: #ff0450;
+    margin-top: 5px;
+}
+</style>
+</head>
+
+<body>
+<figure>
+    <img src="http://www.adherecreative.com/Portals/105208/images/blog-recognition.gif" >
+    <figcaption>Our best websites that we've created. <span>Some extra text that probably shouldn't be seen but soon will be seen. yay! <a href="#">Random link</a></span></figcaption>
+    
+</figure>
+
+<figure>
+    <img src="http://www.adherecreative.com/Portals/105208/images/blog-recognition.gif" >
+    <figcaption>The best websites that we've created</figcaption>
+    
+</figure>
+</body>
+</html>
