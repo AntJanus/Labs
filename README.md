@@ -5,3 +5,6 @@ It's meant to host my code snippets, ideas, designs, and anything else that you 
 My homepage url: http://antjanus.com/labs will feature these snippets plus links to demos.
 
 Enjoy!
+
+Log:
+Work is currently under 0.5 version
