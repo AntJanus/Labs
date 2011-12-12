@@ -14,3 +14,16 @@ UPDATE LOG
 editorWelcome.php:
 v1.01
 Changed the meta around to include correct hcard information (source-org, copyright, etc.). Also, some tags were left open, I closed them up
+
+header5.php:
+v1.01
+- updated language attributes
+- added body tag and body class
+- deleted feed item data (use automatic feed links in functions.php, refer to basicFunctions.php file)
+
+microformattedLoop.php
+v1.01
+- added post classes/post ID
+- fixed meta information (categories is now the_category(', ') instead of the_category(''))
+- added source-org copyright to the bottom of the loop
+- changed meta v card to a <p> tag instead of <span>

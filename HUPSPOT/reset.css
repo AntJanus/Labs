@@ -1,0 +1,57 @@
+/* HUB SPOT FIXES */
+
+/* Here's a basic list of fixes for Hubspot CMS to get started with creating your website layout. There are some assumptions made but it works well for me */
+
+#foxboro_menu {
+/* this will situate the nav next to the logo */
+width: 630px !important;
+margin-top: -70px;
+left: 50%;
+margin-left: -150px;
+padding-bottom:17px;
+}  
+
+#foxboro_courtesy_links{
+display:none;
+}
+
+
+#foxboro_header{
+height: 95px !important;
+}
+
+#foxboro_container{
+width: 100% !important;
+}
+
+.standardWidth, #foxboro_header{
+/* Choose layout width */
+width: 980px;
+}
+
+.center, #foxboro_header{
+    margin: 0 auto;
+}
+
+
+/* CLASSES */
+.clearfix:after {
+content: ".";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;
+}
+ 
+.clearfix {
+display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+display: block;
+}
+ 
+* html .clearfix {
+height: 1%;
+}
