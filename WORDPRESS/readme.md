@@ -22,6 +22,14 @@ v1.01
 - deleted feed item data (use automatic feed links in functions.php, refer to basicFunctions.php file)
 
 microformattedLoop.php
+v1.012
+- changed minor microformatting issues (added the "single" class for single articles)
+- added the "email" tag for Google+ article recognition
+- added the author link. Leads to nowhere if you don't have a author.php template page. Remove if necessary
+
+TO DO:
+- seamlessly integrate email (it sticks out currently)
+
 v1.01
 - added post classes/post ID
 - fixed meta information (categories is now the_category(', ') instead of the_category(''))
