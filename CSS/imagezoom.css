@@ -1,0 +1,30 @@
+img {
+ width: 150px; 
+    
+    -webkit-transition: all ease-in 1s;
+}
+
+ul{
+ margin: 0 auto;
+  width: 150px;  
+}
+
+li{
+ margin: 25px 0;   
+}
+
+img:hover{
+ -webkit-transform: scale3d(3,3,0);
+}
+
+/* HTML STRUCTURE 
+
+<ul>
+    <li><img src="http://farm7.staticflickr.com/6119/6359903133_8ebce8dc25_z.jpg" /></li>
+    <li><img src="http://farm7.staticflickr.com/6119/6359903133_8ebce8dc25_z.jpg" /></li>
+    <li><img src="http://farm7.staticflickr.com/6119/6359903133_8ebce8dc25_z.jpg" /></li>
+    <li><img src="http://farm7.staticflickr.com/6119/6359903133_8ebce8dc25_z.jpg" /></li>
+</ul>
+
+
+*/
