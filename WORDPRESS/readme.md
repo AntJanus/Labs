@@ -35,3 +35,4 @@ v1.01
 - fixed meta information (categories is now the_category(', ') instead of the_category(''))
 - added source-org copyright to the bottom of the loop
 - changed meta v card to a <p> tag instead of <span>
+
