@@ -14,8 +14,6 @@ echo $postDate ?>" pubdate> <?php echo $postDate2; ?></time>
       </span></span>
    <div class="postContent entry-content">
      <?php the_content(); ?>
-     
-     
 
      <p class="postmetadata">Posted in <?php the_category(', '); ?> <br /><?php the_tags(); ?> <br /> Source: <span class="vcard"><span class="source-org copyright"><?php bloginfo('name'); ?></span></span></p>
      
