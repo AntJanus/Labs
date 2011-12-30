@@ -29,7 +29,7 @@ echo $postDate ?>" pubdate> <?php echo $postDate2; ?></time>
        the_excerpt();
 		}
 		?>
-        <p class="postmetadata" style=" <?php if($loopMeta == 0){ echo "display:none"; }?> ">Posted in
+        <p class="postmetadata" style=" <?php if($loopMeta2 == 0){ echo "display:none"; }?> ">Posted in
           <?php the_category(', '); ?>
           <br />
           <?php the_tags(); ?>
