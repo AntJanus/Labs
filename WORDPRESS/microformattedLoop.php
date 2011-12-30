@@ -2,11 +2,16 @@
                 <article id="post-<?php the_ID();?>" <?php post_class('post hentry hnews single');?>><!-- START OF POST -->
           
 <h1 class="entry-title item fn"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="url"><?php the_title(); ?></a></h1>
-<p class="meta  vcard"><time class="updated" datetime="<?php
+<span class="meta  vcard">
+      <time class="updated" datetime="<?php
 $postDate = get_the_date('c');
 $postDate2 = get_the_date('d.m.Y');
-echo $postDate ?>" pubdate>
-<?php echo $postDate2; ?></time> | <span class="byline fn author url"><?php the_author_posts_link(); ?></span> | <a href="mailto:<?php the_author_email(); ?>">email</a> | <?php the_category(', '); ?></p> 
+echo $postDate ?>" pubdate> <?php echo $postDate2; ?></time>
+      | <span class="byline fn author">
+      <?php the_author_posts_link(); ?>
+      </span> | <a href="mailto:<?php the_author_meta('email'); ?>" class="email author">email</a> |
+      <?php the_category(', '); ?>
+      </span></span>
    <div class="postContent entry-content">
      <?php the_content(); ?>
      
