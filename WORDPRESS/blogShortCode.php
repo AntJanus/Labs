@@ -5,6 +5,7 @@ function showBlogPosts( $atts ) {
 		'cat' => '',
 	// number of posts
 		'num' => 5,
+		'p' => '',
 	// The following variables work on an "on/off" switch, 1 to allow, 0 to disallow
 	// excerpt or content. default = excerpt
 		'excerpt' => 1,
@@ -19,10 +20,13 @@ function showBlogPosts( $atts ) {
 	$loopMeta = $meta;
 	$loopExcerpt = $excerpt;
 	$loopMeta2 = $meta2;
+	if ($p != ''){
+	$posts_per_page = '';	
+	}
 	
  wp_reset_query();
 global $paged;
-$args = array( 'posts_per_page' => $num, 'cat'=> $cat );
+$args = array( 'posts_per_page' => $num, 'cat'=> $cat, 'p' => $p );
 if($pnavi == 1){
 $args['paged'] = get_query_var('page');
 }
