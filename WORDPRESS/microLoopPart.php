@@ -18,15 +18,17 @@ echo $postDate ?>" pubdate> <?php echo $postDate2; ?></time>
       </span></span>
 
       <div class="postContent entry-content">
-        <?php 
+         <?php 
 		if($loopExcerpt == 0){
 		the_content();
 		}
 		else{
-			 echo '<div class="post-thumbnail">';
-			 the_post_thumbnail();
-			 echo '</div>';
-       the_excerpt();
+			if ( has_post_thumbnail() ) {
+			 the_post_thumbnail('thumbnail', array('class' => 'alignleft')); 
+	  		 
+			}
+		the_excerpt();
+	   	echo '<div class="clearfix"></div>';
 		}
 		?>
         <p class="postmetadata" style=" <?php if($loopMeta2 == 0){ echo "display:none"; }?> ">Posted in

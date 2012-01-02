@@ -1,4 +1,6 @@
 <?php
+/************* SHORTCODES ****************/
+// 
 function showBlogPosts( $atts ) {
 	extract( shortcode_atts( array(
 	// what categories to show, default = all. 
