@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* NOTE: I do realize the below can be reworked into a function, I will do that when time allows */
+
+$(document).ready(function() { 
+
+$("#productNav ul li").bind('mouseenter', function() {
+  $(this).addClass("lSelected").siblings().removeClass("lSelected");
+  var indexNumber = $(this).index() + 1;
+  $("#productPictures a:nth-child("+ indexNumber +")").addClass("visible").siblings().removeClass("visible");
+ 
+});
+
+/* 
+* INCLUDE THE PART BELOW IF YOU HAVE A DEFAULT IN MIND.
+* create the default by appending the lSelected class 
+* and the visible class where they're supposed to be
+*/
+var currentSelection = $("#products ul li.lSelected").index() + 1;
+
+$("#products").bind('mouseleave', function(){
+
+$("#productNav ul li:nth-child(" + currentSelection +")").addClass("lSelected").siblings().removeClass("lSelected");
+$("#productPictures a:nth-child(" + currentSelection +")").addClass("visible").siblings().removeClass("visible");
+
+});
+});
+
+
+</script>
+<style>
+.lSelected a{
+	color: #000;
+	text-decoration: none;
+}
+
+#productPictures a{
+	
+}
+
+.visible{
+border: 1px solid #000;
+}
+</style>
+
+</head>
+
+<body>
+<div id="products">
+<div class="clearfix">&nbsp;</div>
+<div id="productNav">
+<ul>
+<li class="lSelected"><a href="#">Product1</a></li>
+<li><a href="#">Product1</a></li>
+<li><a href="#">Product1</a></li>
+<li><a href="#">Product1</a></li>
+<li><a href="#">Product1</a></li>
+<li><a href="#">Product1</a></li>
+</ul>
+</div>
+<div id="productPictures">
+<a href="#" class="visible"><img src="#" border="0" alt=""/></a>
+<a href="#"><img src="#" border="0" alt=""/></a>
+<a href="#"><img src="#" border="0" alt=""/></a>
+<a href="#"><img src="#" border="0" alt=""/></a>
+<a href="#"><img src="#" border="0" alt=""/></a>
+<a href="#"><img src="#" border="0" alt=""/></a>
+<a href="#"><img src="#" border="0" alt=""/></a>
+<a href="#"><img src="#" border="0" alt=""/></a></div>
+</div>
+
+
+</body>
+</html>
