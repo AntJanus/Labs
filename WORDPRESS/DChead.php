@@ -27,6 +27,18 @@
     <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
+    
+    <!-- BELOW IS A SAMPLE DUBLIN CORE META DATA HEADER -->
+   <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+	<meta name="DC.title" content="<?php wp_title(''); ?>">
+	<meta name="DC.description" content="<?php if ( is_single() ) {
+        single_post_title('', true); 
+    } else {
+        bloginfo('name'); echo " - "; bloginfo('description');
+    }
+    ?>">
+	<meta name="DC.language" scheme="ISO639-1" content="en">
+    <meta name="DC.publisher" content="<?php bloginfo('name');?>">
+    <!-- END DUBLIN CORE -->
 </head>
 <body <?php body_class();?>>
