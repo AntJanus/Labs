@@ -8,6 +8,7 @@
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
 <meta name="title" content="<?php wp_title(''); ?>" />
 <meta name="viewport" content="width=device-width" />
+<meta name="language" content="en" />
 <!-- End basic meta -->
 
 <title><?php wp_title(); ?></title>

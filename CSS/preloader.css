@@ -1,0 +1,8 @@
+/* CSS Document */
+
+/*
+have a tiny gif load up before an image does for a preloading effect. taken from www.webdesigncreare.co.uk/blog/web-designers/useful-css-snippets.html
+*/
+img{
+background: url(img/preloader.gif) no-repeat 50% 50%;	
+}

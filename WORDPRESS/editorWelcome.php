@@ -38,7 +38,8 @@ function title_text_input( $title ){
 									"How To: Write a GOOD post",
 									"Top 10 whatever"
 									);
-			return $title[array_rand($title)];
+			$title = $title[array_rand($title)];
+			return $title;
 }
 add_filter( 'enter_title_here', 'title_text_input' );
 

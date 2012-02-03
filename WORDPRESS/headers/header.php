@@ -8,6 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width" />
 <meta name="title" content="<?php wp_title(''); ?>" />
+<meta name="language" content="EN" /> 
 <!-- end primary meta -->
 
 <title><?php wp_title(); ?></title>
