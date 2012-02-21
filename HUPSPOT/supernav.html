@@ -1,0 +1,133 @@
+<html>
+<head>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+$("#superNav").mouseenter(function(){
+$("#superNav").addClass("hover");
+
+}).mouseleave(function(){
+$("#superNav").removeClass("hover");
+
+}
+);
+// where to show the supernav
+$("#foxboro_menu li:nth-child(2)").mouseenter(function(){
+$("#superNav").addClass("hover");
+
+}).mouseleave( function(){
+$("#superNav").removeClass("hover");
+
+}
+);
+$("#superNav li").mouseenter(function() {
+  $("#superNav li").removeClass("lSelected");
+$(this).addClass("lSelected");
+  var indexNumber = $(this).index() + 1;
+
+if($(this).parents("div").attr('id') === 'sCol2'){
+  indexNumber = indexNumber + 5;
+}
+
+  $("#sCol3 img:nth-child("+ indexNumber +")").addClass("visible").siblings().removeClass("visible");
+});
+
+});
+</script>
+<style>
+/******************** SUPERNAV
+***********************************************/
+
+.scol { 
+float:left;
+width:  200px;
+padding: 10px 20px ;
+}
+
+.scol ul{
+margin-top: 15px;
+list-style-type:none;
+padding-left: 0;
+}
+
+.scol li{
+margin-bottom: 10px;
+}
+
+.scol li a{
+text-decoration: none;
+text-transform: uppercase;
+color: #7C7C7C !Important;
+}
+
+#sCol3{
+width: 200px;
+}
+
+#superNav{
+width: 740px;
+clear:both;
+position:absolute;
+top: 30px;
+left:50%;
+margin-left: -345px;
+background: url(images/navbgr.png) no-repeat;
+z-index:1000;
+overflow:hidden;
+height: 185px;
+padding-top: 30px;
+display: none;
+}
+
+.hover{
+display: block !important;
+}
+
+#suNav li a{
+font-size: 13px;
+}
+
+#sCol3 img{
+display: none;
+}
+
+#sCol3 .visible{
+display:block !Important;
+}
+</style>
+</head>
+<body>
+<div id="superNav">
+<div id="suNav">
+<div id="sCol1" class="scol">
+<ul>
+<li><a href="#" title="#" target="_self">Menu Item</a></li>
+<li><a href="#" title="#" target="_self">Menu Item</a></li>
+<li><a href="#" title="#" target="_self">Menu Item</a></li>
+<li><a href="#" title="#" target="_self">Menu Item</a></li>
+<li><a href="#" title="#" target="_self">Menu Item</a></li>
+</ul>
+</div>
+<div id="sCol2" class="scol">
+<ul>
+<li><a href="#" title="#" target="_self">Menu Item</a></li>
+<li><a href="#" title="#" target="_self">Menu Item</a></li>
+<li><a href="#" title="#" target="_self">Menu Item</a></li>
+<li><a href="#" title="#" target="_self">Menu Item</a></li>
+</ul>
+</div>
+</div>
+<div id="sCol3" class="scol">
+<img src="#" alt="#" width="200px" class="visible" />
+<img src="#" alt="#" width="200px" class="visible" />
+<img src="#" alt="#" width="200px" class="visible" />
+<img src="#" alt="#" width="200px" class="visible" />
+<img src="#" alt="#" width="200px" class="visible" />
+<img src="#" alt="#" width="200px" class="visible" />
+<img src="#" alt="#" width="200px" class="visible" />
+<img src="#" alt="#" width="200px" class="visible" />
+<img src="#" alt="#" width="200px" class="visible" />
+</div>
+<div class="clearfix"></div>
+</div>
