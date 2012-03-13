@@ -33,6 +33,16 @@ width: 980px;
     margin: 0 auto;
 }
 
+#foxboro_header,.normalWidth,#foxboro_two-column,.logo, #foxboro_two-column-right, #foxboro_three-eq-column, #foxboro_one-column
+{
+	float:none !important;
+	margin:0 auto !important;
+	overflow:visible !important;
+	width:980px;
+}
+
+
+
 
 /* CLASSES */
 .clearfix:after {
