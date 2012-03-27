@@ -1,0 +1,249 @@
+<html>
+<head>
+<!--SEO Settings from Advanced Options on Landing Page Editor-->
+<title>{{ Title }}</title>
+<meta name="description" content="{{ MetaDescription }}" />
+<meta name="keywords" content="{{ MetaKeywords }}" />
+<link rel="shortcut icon" type="image/ico" href="{{ Favicon }}" />
+<!--End SEO Settings-->
+
+<!-- VARIABLE DECLARATIONS -->
+<meta name="image:Logo" content="http://www.adherecreative.com/Portals/105208/images/small-business-marketing.png" />
+<meta name="text:Header Tagline" content="Header Tagline Goes Here" />
+<meta name="image:Main Image" content="http://test.test.com/test.jpg" />
+<meta name="text:Text Headline" content="Main text headline" />
+<meta name="html:Feature List" content="Checkboxed list" />
+<meta name="html:Main Text" content="Main Text" />
+<meta name="widget:Form" content="" />
+<meta name="text:Copyright Info" content="Copyright information" />
+
+<!--CSS for Performable Awesome Buttons-->
+<link rel="stylesheet" type="text/css" href="http://cdn.performable.com/static/css/awesome.css" media="screen" />
+<style>
+/*
+ & Columns : 12 
+ & Gutter %: 20% 
+ */
+.grid_1 { width:6.25%; } /* 60 */
+.grid_2 { width:14.583%; } /* 140 */
+.grid_3 { width:22.917%; } /* 220 */
+.grid_4 { width:31.25%; } /* 300 */
+.grid_5 { width:39.579%; } /* 380 */
+.grid_6 { width:47.917%; } /* 460 */
+.grid_7 { width:56.25%; } /* 540 */
+.grid_8 { width:64.583%; } /* 620 */
+.grid_9 { width:72.917%; } /* 700 */
+.grid_10 { width:81.25%; } /* 780 */
+.grid_11 { width:89.583%; } /* 860 */
+.grid_12 { width:97.917%; } /* 940 */
+
+.offset_1 {padding-left: 8.333%;}
+.offset_2{padding-left: 16.663%;}
+.offset_3{padding-left: 24.997%;}
+
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+    margin: 0 1.04%;
+  float: left;
+  display: block;
+}
+.alpha {
+  margin-left:0px;
+}
+.omega {
+  margin-right:0px;
+}
+.container {
+  min-width: 740px;
+  max-width: 1024px;
+  padding: 1.5em;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.containerFull{
+  min-width: 790px;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.clear {
+  clear:both;
+  display:block;
+  overflow:hidden;
+  visibility:hidden;
+  width:0;
+  height:0
+}
+.clearfix:after {
+  clear:both;
+  content:' ';
+  display:block;
+  font-size:0;
+  line-height:0;
+  visibility:hidden;
+  width:0;
+  height:0
+}
+* html .clearfix, *:first-child+html .clearfix {
+  zoom:1
+}
+
+#tagline h1{
+font-size: 33px;
+font-family: Helvetica;
+color: white;
+background: #8DC63F;
+padding: 10px;
+text-align: center;
+margin:0;
+}
+
+#text h1{
+font-family: Impact, Haettenschweiler, “Arial Narrow Bold”, sans-serif;
+font-size: 30px;
+color: #8DC63F;
+}
+
+#text {
+color: #6D6E71;  
+font-family:Helvetica, Arial, sans-serif;
+}
+
+#checkboxes ul li{
+padding: 7px 0;
+list-style-type:none;  
+}
+
+#mainText p span{
+  font-size: 24px;
+}
+
+#mainText ol li{
+margin-bottom: 20px;  
+}
+
+#form {
+width: 350px;
+margin-top: 10px;
+box-shadow: 0 0 10px #999;
+margin-left: 31px;
+}
+
+form{
+background: #DCDDDE;
+border: 1px solid #231F20;  
+}
+
+fieldset{
+border: 0;  
+}
+
+input[type=text]{
+width: 100%;
+display:block;    
+}
+
+form ol, form ul{
+padding-left: 0;
+list-style-type:none;  
+}
+
+form ol>li{
+margin-bottom: 15px;  
+}
+
+form textarea{
+height: 80px;
+width: 100%;  
+}
+
+form select{
+width: 100%;
+display:block;  
+}
+
+form input[type=submit]{
+text-align: center;
+display: block;
+margin-left: 11px;  
+}
+
+#checkboxes ul {
+	padding-left: 0;
+}
+  
+#checkboxes ul li{
+	padding-left: 70px;
+background: url(http://d1nu2rn22elx8m.cloudfront.net/catalog/14972.0/assets/images/BRvYN-checkmark.png) no-repeat left;
+font-size: 25px;
+
+}
+
+.checkbox ul li{
+	margin-bottom: 10px;
+}
+
+#mainImage{
+padding-top: 10px;	
+}
+
+.colHeading{
+text-align: center;
+padding: 0;
+color: #6D6E71;
+margin: 0;
+margin-top: -24px;
+font-size: 20px;
+Font-weight: bold;
+font-family:Helvetica, Arial, sans-serif;
+}
+
+.green.awesome{
+	background-color: #8DC63F !important;
+float: right;
+border: 1px solid #6D6E71;
+}
+
+#header{
+margin-top: 15px;
+margin-bottom: 35px;	
+}
+</style>
+</head>
+
+<body>
+<div id="header" class="containerFull">
+<div id="logo" class="grid_3"><img src="{{image:Logo}}"></div>
+<div id="tagline" class="grid_9"><h1>{{ text: Header Tagline }}</h1></div>
+<div class="clear">&nbsp;</div>
+</div>
+<div class="containerFull" id="mainContent">
+<div class="grid_7">
+  <div id="mainImage"><img src="{{image:Main Image}}"></div>
+<div id="text">
+<h1>{{ text:Text Headline }}</h1>
+<div id="checkboxes">
+{{ html:Feature List }}
+</div>
+<div id="mainText">
+{{ html:Main Text}}
+</div>
+</div>
+</div>
+
+<div class="grid_5">
+<p class="colHeading">Get Your Free Marketing Analysis</p>
+<div id="form">
+{{ widget:Form }}
+</div>
+</div>
+<div class="clear">&nbsp;</div>
+</div>
+
+<div id="footer">
+{{ text:Copyright Info}}
+</div>
+</body>
+</html>​
