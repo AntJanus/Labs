@@ -65,3 +65,9 @@ display: block;
 * html .clearfix {
 height: 1%;
 }
+
+.clear{
+	clear:both;
+	width: 100%;
+	display:block;	
+}
