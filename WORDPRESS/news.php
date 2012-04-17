@@ -97,9 +97,22 @@ foreach( $posts_array as $post ) :	setup_postdata($post); ?>
 
 
 <?php 
+/*
+/ NOTE: The function below fetches an RSS feed from another website and parses it through.
+/ I added a filter to catch images (the native "image" function of SimplePie did not work one of my feeds)
+/ The first image will be return.
+/
+/ The cache automatically fetches a feed every 12 hours. 
+/ To modify this, add this to the function.php:
+/ add_filter('wp_feed_cache_transient_lifetime', create_function('$a', 'return 7200;'); 
+/ where "7200" is the amount of time to wait between fetches in seconds. 7200 is 2 hours
+/ to force refresh, change this function temporarily to 60 seconds and wait. Change back.
+/ Changing the number to anything less may result in over-fetching. I've never tried it, it's better to
+/ to stay safe though.
+*/ 
 // EXTERNAL
 include_once(ABSPATH . WPINC . '/feed.php');
-$rss = fetch_feed('http://blog.assemblesystems.com/CMS/UI/Modules/BizBlogger/rss.aspx?tabid=646730&moduleid=1341403&maxcount=25&u=22560'); 
+$rss = fetch_feed('http://site.com/rssfeed'); 
 
 if (!is_wp_error( $rss ) ) : // Checks that the object is created correctly 
     // Figure out how many total items there are, but limit it to 5. 
